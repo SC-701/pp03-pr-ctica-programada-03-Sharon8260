@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE EliminarModelo
+    @Id UNIQUEIDENTIFIER
+AS
+BEGIN
+    DELETE FROM Modelos
+    WHERE Id = @Id
+
+    SELECT @Id
+END
